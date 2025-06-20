@@ -70,10 +70,10 @@ if (Number(page.style.height.replace("px" , "")) != windowHeight) {
 const pw = pageHeading.clientWidth;
   const ph = pageHeading.clientHeight;
 
-  const iW = pageHeading__I.clientWidth;
+  
 
   const fontSizeI = (pw + ph) / 18;
-  const fontSizeH1 = (pw - iW) / 10;
+  
 
   
   const currentI = pageHeading__I.style.fontSize;
