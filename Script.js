@@ -33,55 +33,16 @@
 // const pageHeading = document.getElementById("page-heading");
 // const pageHeading__I = pageHeading.querySelector("i");
 // const pageHeading__H1 = pageHeading.querySelector("h1");
-// function styles() {
+let page = document.getElementById("page")
+function styles() {
 
-//     let windowWidth = window.innerWidth;
-//     let windowHeight = window.innerHeight;
-//     if (windowWidth >= 769) {
-//      let navAccount = document.querySelector(".sidebar .nav-account");
-//      if (navAccount) {
-//        let nav = document.getElementById("nav");
-//        let navbarNavAccount = nav.getElementsByClassName("nav-account")[0];
-//        if (!navbarNavAccount) {
-//          let clone = navAccount.cloneNode(true);
-//          nav.appendChild(clone)
-//          navAccount.remove();
-//        }
-//      }
-        
-//     }
-//     else {
-//      let navAccount = document.querySelector(".nav .nav-account");
-//      if (navAccount) {
-//        let sidebar = document.getElementById("sidebar");
-//        let sidebarNavAccount = sidebar.getElementsByClassName("nav-account")[0];
-//        if (!sidebarNavAccount) {
-//          let clone = navAccount.cloneNode(true);
-//          sidebar.prepend(clone)
-//          navAccount.remove();
-//         }
-//       }
-// const pw = pageHeading.clientWidth;
-//   const ph = pageHeading.clientHeight;
-
-//   const iW = pageHeading__I.clientWidth;
-
-//   const fontSizeI = (pw + ph) / 12;
-//   const fontSizeH1 = (pw - iW) / 10;
-
-//   const currentH1 = pageHeading__H1.style.fontSize;
-//   const currentI = pageHeading__I.style.fontSize;
-
-//   const targetH1 = fontSizeH1 + 'px';
-//   const targetI = fontSizeI + 'px';
-
-//   if (currentH1 !== targetH1) pageHeading__H1.style.fontSize = targetH1;
-//   if (currentI !== targetI) pageHeading__I.style.fontSize = targetI;
-
-//     }
+    let windowWidth = window.innerWidth;
+    let windowHeight = window.innerHeight;
+if (page.style.height != windowHeight) {
+    page.style.height = windowHeight + 'px';
+}
     
- 
-    
-//     requestAnimationFrame(styles)
-//   }
-//   styles()
+    requestAnimationFrame(styles)
+  }
+  styles()
+
