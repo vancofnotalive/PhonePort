@@ -40,7 +40,7 @@ body {
   
     flex-direction: column;
  
- 
+ overflow: hidden;
 }
 @media (min-width: 769px) {
 
@@ -191,8 +191,8 @@ width: 96dvw;
     .page-content {
             position: absolute;
     right: 2dvw;
-    bottom: 0;
-    height: calc(100dvh - ((24dvh - 10dvw)));
+    top: calc(24dvh + 2dvw);
+    height: calc(100dvh - ((24dvh + 2dvw)));
     width: 96dvw;
     }
  .page-heading {
@@ -300,6 +300,7 @@ background-color: rgb(231, 231, 231);
 }
 .nav-row-img img {
     width: 50%;
+    max-height: calc(100% - 5dvw);
 }
 
 
