@@ -30,9 +30,9 @@
 //     _assignElement(element , prop , value + 'px')
 // }
 // }
-// const pageHeading = document.getElementById("page-heading");
-// const pageHeading__I = pageHeading.querySelector("i");
-// const pageHeading__H1 = pageHeading.querySelector("h1");
+const pageHeading = document.getElementById("page-heading");
+const pageHeading__I = pageHeading.querySelector("i");
+const pageHeading__H1 = pageHeading.querySelector("h1");
 let page = document.getElementById("page")
 function styles() {
 
