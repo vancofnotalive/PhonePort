@@ -72,16 +72,16 @@ const pw = pageHeading.clientWidth;
 
   const iW = pageHeading__I.clientWidth;
 
-  const fontSizeI = (pw + ph) / 12;
+  const fontSizeI = (pw + ph) / 18;
   const fontSizeH1 = (pw - iW) / 10;
 
-  const currentH1 = pageHeading__H1.style.fontSize;
+  
   const currentI = pageHeading__I.style.fontSize;
 
-  const targetH1 = fontSizeH1 + 'px';
+  
   const targetI = fontSizeI + 'px';
 
-  if (currentH1 !== targetH1) pageHeading__H1.style.fontSize = targetH1;
+ 
   if (currentI !== targetI) pageHeading__I.style.fontSize = targetI;
 
     }
