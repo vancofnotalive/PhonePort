@@ -142,7 +142,9 @@ line-height: normal;
 .sidebar-menu {
     display: none;
 }
-
+.nav-row {
+    display: none !important;
+}
 
 
 
@@ -190,7 +192,7 @@ width: 96dvw;
             position: absolute;
     right: 2dvw;
     bottom: 0;
-    height: calc(100dvh - ((24dvh - 2dvw) + 2dvw));
+    height: calc(100dvh - ((24dvh - 10dvw)));
     width: 96dvw;
     }
  .page-heading {
@@ -390,11 +392,14 @@ div {
 .sidebar-menu {
     
     
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     align-self: flex-start !important;
     border-top-left-radius: 1dvh;
+}
+.sidebar-menu i {
+    font-size: 3dvh;
 }
 .nav-row {
     height: calc(100% - 9dvh);
