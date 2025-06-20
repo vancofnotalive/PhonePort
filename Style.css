@@ -17,6 +17,7 @@ html {
     width: 100%;
     margin: 0 !important;
     padding: 0 !important;
+    flex-grow: 1;
 }
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -167,10 +168,10 @@ line-height: normal;
 
 
     .nav {
-height: calc(15dvh - 4dvw);
+height: calc(25dvh - 4dvw);
 width: 96dvw;
    margin: 2dvw !important;
-   justify-content: space-between;
+   flex-direction: column;
     }
     .sidebar {
  position: absolute;
@@ -189,13 +190,13 @@ width: 96dvw;
             position: absolute;
     right: 2dvw;
     bottom: 0;
-    height: calc(100dvh - ((15dvh - 2dvw) + 2dvw));
+    height: calc(100dvh - ((25dvh - 2dvw) + 2dvw));
     width: 96dvw;
     }
  .page-heading {
  width: calc((100% - (15dvh - 4dvw)) - 4dvh);
     padding: 2dvh !important;
-    height: calc(100% - 4dvh);
+    height: calc(50% - 4dvh);
    
     
     }
@@ -275,9 +276,24 @@ line-height: normal;
     opacity: 0.2;
 }
 .sidebar-menu {
-    display: flex;
-}
+    display: inline-flex;
+    height: 100%;
+    width: calc(15dvh - 4dvw);
 
+}
+.nav-row-img {
+    width: calc(((100% - (15dvh - 4dvw)) - 6dvw));
+    
+    margin-left: 6dvw !important;
+    
+justify-content: center;
+display: flex;
+height: 100%;
+align-items: center;
+}
+.nav-row-img img {
+    width: 50%;
+}
 
 
 
@@ -367,10 +383,17 @@ div {
     display: none;
 }
 .sidebar-menu {
-    height: 100%;
-    width: calc(15dvh - 4dvw);
+    
     background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: flex-start !important;
+}
+.nav-row {
+    height: 50%;
+    width: 100%;
+    display: flex;
+align-items: flex-start;
+
 }
