@@ -138,7 +138,9 @@ line-height: normal;
 .sidebar-closearea {
     display: none;
 }
-
+.sidebar-menu {
+    display: none;
+}
 
 
 
@@ -272,7 +274,9 @@ line-height: normal;
     width: 40dvw;
     opacity: 0.2;
 }
-
+.sidebar-menu {
+    display: flex;
+}
 
 
 
