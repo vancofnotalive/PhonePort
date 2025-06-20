@@ -41,6 +41,7 @@ function styles() {
 if (Number(page.style.height.replace("px" , "")) != windowHeight) {
     page.style.height = windowHeight + 'px';
 }
+    
 
             if (windowWidth >= 769) {
      let navAccount = document.querySelector(".sidebar .nav-account");
@@ -86,8 +87,7 @@ const pw = pageHeading.clientWidth;
     }
     
  
-    
+    requestAnimationFrame(styles)
   }
-  window.addEventListener("resize" , styles)
+  styles()
 
-styles();
