@@ -284,12 +284,13 @@ line-height: normal;
 .nav-row-img {
     width: calc(((100% - (15dvh - 4dvw)) - 6dvw));
     
-    margin-left: 6dvw !important;
+    padding-left: 6dvw !important;
     
 justify-content: center;
 display: flex;
 height: 100%;
 align-items: center;
+background-color: white;
 }
 .nav-row-img img {
     width: 50%;
@@ -384,7 +385,7 @@ div {
 }
 .sidebar-menu {
     
-    background-color: green;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
