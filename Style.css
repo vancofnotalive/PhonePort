@@ -231,10 +231,10 @@ width: 96dvw;
 
 
 .sidebar .nav-account {
- height: 12dvh;
- --navAccount_BackgroundColor: rgb(80, 3, 102);
+ height: 10dvh;
+ --navAccount_BackgroundColor: rgb(48, 48, 48);
     width: calc(57dvw - 2dvh);
-       border-radius: 5dvh;
+       border-radius: 2dvh;
     border-left: 2dvh solid var(--navAccount_BackgroundColor);
     border-top: 0 !important;
     border-bottom: 0 !important;
@@ -247,7 +247,7 @@ width: 96dvw;
 }
 .nav-account::after {
     content: "";
-    height: 16dvh;
+    height: 14dvh;
     width: 60dvw;
     background-color: rgb(218, 218, 218);
     position: absolute;
@@ -262,7 +262,7 @@ font-size: 8.1428571429dvw;
 color: rgb(255, 255, 255);
 }
 .sidebar .nav-account h1 {
-   font-size: calc((3dvh + 3dvw) / 2);
+   font-size: calc((3dvh + 3dvw) / 2.5);
     max-height: calc(100% - 1dvw);
     width: calc((57dvw - 2ch) - (8.1428571429dvw  * 2));
 line-height: normal;
