@@ -62,7 +62,7 @@ padding: 1dvh !important;
  position: absolute;
     top: 1dvw;
     left: 0;
-    height: calc(100dvh - 1dvw);
+    height: calc(100dvh - 2dvw);
     width: 19dvw;
     margin-left: 1dvw !important;
     background-color: green;
@@ -148,9 +148,27 @@ line-height: normal;
 .sidebar {
     display: flex;
 }
-
-
-
+._pc-sidebar-logo {
+    height: calc(13dvh - 2dvw);
+    width: 100%;
+      margin: 1dvh 0 !important;
+      display: flex;
+}
+._pc-sidebar-logo a {
+    width: 45%; 
+max-height: calc((100dvh - 2dvw) - 75dvh);
+}
+._pc-sidebar-logo a img {
+    width: 100%;
+    max-height: calc((100dvh - 2dvw) - 80dvh);
+    
+}
+.sidebar-content {
+    height: calc(100% - (13dvh - 2dvw));
+    width: 100%;
+    background-color: green;
+    
+}
 
 
 
@@ -187,7 +205,7 @@ width: 96dvw;
   
     
     z-index: +9999;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: flex-end;
     }
     .page-content {
@@ -305,8 +323,17 @@ background-color: rgb(231, 231, 231);
     max-height: calc(100% - 5dvw);
 }
 
-
-
+._pc-sidebar-logo {
+    display: none;
+}
+.sidebar-content {
+    height: calc(100% - 14dvh);
+    width: 100%;
+    background-color: green;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
 
 
 
@@ -341,7 +368,7 @@ background-color: rgb(231, 231, 231);
     
     background-color: white;
     border-radius: 1dvh;
-        border: 0.1dvh solid rgb(236, 236, 236);
+        border: 0.1dvh solid rgb(214, 214, 214);
 }   
 .page-content {
 
@@ -413,3 +440,15 @@ div {
 align-items: flex-start;
 
 }
+._pc-sidebar-logo {
+
+    
+    align-items: center;
+    justify-content: center;
+    
+  
+    
+}
+
+
+/* now move this to media query of min and in js clone img src from phone to pc */
