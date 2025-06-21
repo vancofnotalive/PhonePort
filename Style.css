@@ -357,13 +357,13 @@ background-color: rgb(231, 231, 231);
 .sidebar-content-navigation h1 {
     width: calc(100% - (((100% - 3dvh) - (100% / 1.5)) + (2dvh + 2ch)));
     max-height: 100%;
-    font-size: calc((19dvw / 8));
+    font-size: calc((19dvw / 5));
      margin: 0 1ch !important;
 }
 .sidebar-content-navigation i {
   height: 5dvh;
     width: 5dvh;
-      font-size: calc(0.8dvh + 0.8dvw);
+      font-size: calc(1vh + 1dvw);
          padding: 1dvh !important;
              margin-left: 2dvh !important;
 }
