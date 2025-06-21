@@ -287,7 +287,7 @@ width: 96dvw;
     position: absolute;
     right: 0;
     top: 100%;
-    transform: translate(calc(2dvh + (60dvw - (57dvw + 2dvh))) , -14dvh);
+    transform: translate(calc(2dvh + (60dvw - (57dvw + 2dvh))) , -12dvh);
     z-index: -1;
 }
 
@@ -343,7 +343,7 @@ background-color: rgb(231, 231, 231);
     display: none;
 }
 .sidebar-content {
-    height: calc(100% - 18dvh);
+    height: calc(100% - 14dvh);
     width: 100%;
     background-color: green;
     padding: 2dvh 0 !important;
