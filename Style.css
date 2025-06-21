@@ -65,7 +65,7 @@ padding: 1dvh !important;
     height: calc(100dvh - 2dvw);
     width: 19dvw;
     margin-left: 1dvw !important;
-    background-color: green;
+    
     flex-direction: column;
     justify-content: space-between;
     }
