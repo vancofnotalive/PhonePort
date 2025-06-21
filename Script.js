@@ -91,3 +91,65 @@ const pw = pageHeading.clientWidth;
   }
   styles()
 
+
+function phoneSidebar(element , action) {
+  let sidebar = document.querySelector(".sidebar");
+if (action) {
+if (window.innerWidth <= 768) {
+  sidebar.style.display = "flex";
+  sidebar.querySelector(".sidebar-closearea").setAttribute("onclick" , "phoneSidebar(this , false)")
+  let css = 
+  `
+  .sidebar {
+  animation: sidebar_Open 400ms;
+  }
+  @keyframes sidebar_Open {
+  0% {
+  left: -30dvw;
+  opacity: 0;
+  }
+  100% {
+  left: 0dvw;
+  opacity: 1;
+  }
+  }
+  `
+  scriptStyle(400 , css)
+}
+return "open";
+}
+if (window.innerWidth <= 768) {
+  let animationDelay = 400;
+let css = 
+`
+.sidebar {
+  animation: sidebar_Close ${animationDelay}ms;
+  }
+  @keyframes sidebar_Close {
+  0% {
+  left: 0dvw;
+  opacity: 1;
+  }
+  100% {
+  left: -30dvw;
+  opacity: 0;
+  }
+  }
+`
+
+scriptStyle(animationDelay , css)
+setTimeout(() => {
+sidebar.removeAttribute("style")
+}, animationDelay - 3)  
+}
+
+}
+function scriptStyle(destroyTime, css) {
+    let style = document.createElement("style");
+    style.innerHTML = css;
+    document.head.appendChild(style);
+    setTimeout(() => {
+        style.remove();
+    }, destroyTime)
+}
+
