@@ -283,3 +283,9 @@ if (body && blur) {
   }
   
 }
+
+ textFit(document.querySelector(".nav-account-content-body-details-detail-heading"), {
+    alignHoriz: true,
+    alignVert: false,
+    multiLine: false
+  });

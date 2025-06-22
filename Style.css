@@ -119,13 +119,7 @@ padding: 1dvh !important;
     background-color: rgb(112, 24, 184 , 0.9);
     
 }
-.nav-account:hover i {
-    color: rgb(255, 255, 255);
-    
-}
-.nav-account:hover h1 {
-    color: rgb(255, 255, 255);
-}
+
 
 .nav-account i {
 font-size: calc(((13dvh - 2dvw) / 2.5) + ((78dvw - 2dvh) / 2.5) / 50);
@@ -217,12 +211,83 @@ max-height: calc((100dvh - 2dvw) - 75dvh);
     z-index: +99;
 }
 
+.nav-account-content-body-header {
+    height: 13dvh;
+        width: calc(100% - 8dvh);
+        padding: 2dvh !important;
+        margin: 2dvh 0 !important;
+}
 
+.nav-account-content-body-header i {
+    max-width: calc(30% - 4dvh);
+        
+        max-height: calc(100% - 2dvh);
+        margin: 2dvh !important;
+        font-size: calc((13dvh + (30dvw - 4dvh)) / 12);
+}
+.nav-account-content-body-header section {
+  height: calc(100% - 2dvh);
+        width: calc(70% - 4dvh);
+        
+}
 
+.nav-account-content-body-header section h1 {
+font-size: calc(((30dvw - 4dvh) - (20dvw - 2dvh)) / 5.5);
+    max-width: 100%;
+    max-height: 70%;
+    margin: 0 !important;
+}
+.nav-account-content-body-header section h2 {
+font-size: calc(((30dvw - 4dvh) - (20dvw - 2dvh)) / 9.5);
+    max-height: 30%;
+}
+.nav-account-content-body-details {
+height: calc(100% - 34dvh);
+    width: calc(100% - 4dvh);
+}
+.nav-account-content-body-buttons {
+height: 9dvh;
+    width: 95%;
+    
+    margin: 2dvh 0 !important;
+}
 
+.nav-account-content-body-details-detail {
+height: 7dvh;
+    width: calc((100% / 2.5) - 2dvh);
+    margin: 1dvh !important;
+}
+.nav-account-content-body-details-detail i {
+ font-size: 2.5dvh;
+    max-height: 5dvh;
+    max-width: 30%;
+    
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.nav-account-content-body-details-detail section {
+  height: 5dvh;
+    width: 100%;
+}
 
+.nav-account-content-body-details-detail section h1 {
+    
+    max-height: 3dvh;
+    line-height: 3dvh;
+    width: calc(100% - (30% + 1ch));
+    
+      padding: 0 !important;
+    margin: 0 !important;
+    margin-left: 1ch !important;
+    font-size: 1dvw;
+}
 
-
+.nav-account-content-body-details-detail h2 {
+font-size: 1.5dvh;
+    width: 100%;
+    max-height: 2dvh;
+    word-break: break-all;
+}
 
 
 
@@ -337,9 +402,12 @@ color: rgb(255, 255, 255);
     max-height: calc(100% - 1dvw);
     width: calc((57dvw - 2ch) - (8.1428571429dvw  * 2));
 line-height: normal;
-    margin: 0 1ch !important;
     
     color: rgb(255, 255, 255);
+}
+.sidebar .nav-account h1:nth-child(3) {
+    margin: 0 1ch !important;
+    
 }
 .sidebar-closearea {
     position: absolute;
@@ -426,12 +494,98 @@ background-color: rgb(231, 231, 231);
    bottom:  100%;
         transform: translateY(-5%);
         left: 0;
-        height: 80dvh;
+        max-height: 80dvh;
         width: calc(100dvw - 10dvw);
-        z-index: +999999;
+        z-index: +999;
 }
 .nav-account-content-body-close-body {
-    z-index: +99999;
+    z-index: +99;
+}
+.nav-account-content-body-header {
+    height: 13dvh;
+        width: calc(100% - 6dvh);
+        padding: 2dvh !important;
+        margin: 2dvh 0 !important;
+}
+
+.nav-account-content-body-header i {
+    max-width: calc(30% - 4dvh);
+        
+        max-height: calc(100% - 2dvh);
+        margin: 2dvh !important;
+        font-size: calc((13dvh + (30dvw - 4dvh)) / 4) !important;
+}
+.nav-account-content-body-header section {
+  height: calc(100% - 2dvh);
+        width: calc(70% - 2dvh);
+        
+}
+
+.nav-account-content-body-header section h1 {
+font-size: calc(((30dvw - 4dvh) - (20dvw - 2dvh)) / 1.5) !important;
+    max-width: 100%;
+    max-height: calc(70% - 1dvh);
+    
+    margin: 0 !important;
+    margin-left: 0 !important;
+    padding: 0.5dvh 0 !important;
+    
+}
+.nav-account-content-body-header section h2 {
+font-size: calc(((30dvw - 4dvh) - (20dvw - 2dvh)) / 2.5) !important;
+    max-height: 30%;
+    
+}
+.nav-account-content-body-details {
+max-height: calc(100% - 34dvh);
+    width: calc(95% - 4dvh);
+    align-content: start;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.nav-account-content-body-buttons {
+height: 9dvh;
+    width: 95%;
+    
+    margin: 2dvh 0 !important;
+}
+
+.nav-account-content-body-details-detail {
+height: 7dvh;
+    width: calc((100% / 2.1) - 2dvh);
+    margin: 1dvh !important;
+}
+.nav-account-content-body-details-detail i {
+ font-size: 2dvh !important;
+    max-height: 5dvh;
+    max-width: 30%;
+    
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.nav-account-content-body-details-detail section {
+  height: 5dvh;
+    width: 100%;
+}
+
+.nav-account-content-body-details-detail section h1 {
+    
+    max-height: 3dvh;
+    line-height: 3dvh;
+    width: calc(100% - (30% + 1ch));
+    
+      padding: 0 !important;
+    margin: 0 !important;
+    margin-left: 1ch !important;
+    font-size: 1dvw;
+}
+
+.nav-account-content-body-details-detail h2 {
+font-size: 1.5dvh;
+    width: 100%;
+    max-height: 2dvh;
+    word-break: break-all;
 }
 
 
@@ -683,7 +837,7 @@ flex-direction: column;
         background-color: rgb(255, 255, 255);
         border-radius: 3dvh;
         display: none;
-        
+        flex-direction: column;
         cursor: auto;
     }
     .nav-account-content-body-close-body {
@@ -697,3 +851,142 @@ flex-direction: column;
         opacity: 0.2;
         display: none;
     }
+    .nav-account-content-body-header {
+    
+         background-color: rgb(162, 0, 255);
+         
+         align-self: center;
+         
+         border-radius: 2dvh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+    .nav-account-content-body-header i {
+    
+    }
+    .nav-account-content-body-header section {
+        position: relative;
+      
+        display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+       
+       
+    }
+.nav-account-content-body-header section h1 {
+    
+    overflow-y: scroll;
+    
+}
+.nav-account-content-body-header section h2 {
+    
+    color: rgb(196, 196, 196);
+    
+    overflow-y: scroll;
+}
+.nav-account-content-body-details {
+    
+    align-self: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: flex-start;
+}
+.nav-account-content-body-buttons {
+    
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-account-content-body-details-detail {
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.nav-account-content-body-details-detail i {
+   
+    
+}
+.nav-account-content-body-details-detail section {
+    display: flex;
+  
+    
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.nav-account-content-body-details-detail section h1 {
+    
+    max-height: 3dvh;
+    line-height: 3dvh;
+    width: calc(100% - (30% + 1ch));
+    
+      padding: 0 !important;
+    margin: 0 !important;
+    margin-left: 1ch !important;
+    font-size: 1dvw;
+    overflow-y: scroll;
+    overflow-x: visible;
+    
+}
+.nav-account-content-body-details-detail h2 {
+    
+    overflow-y: scroll;
+    
+}
+.nav-account-content-body-details-detail * {
+    color: #000 !important;
+}
+.nav-account-content-body-buttons button {
+    
+    height: 80%;
+    width: 50%;
+    
+    background-color: rgb(221, 10, 28);
+    border: none;
+    outline: none;
+    border-radius: 2dvh;
+    color: white;
+    font-size: calc(0.6dvh + 0.6dvw);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.nav-account-content-body-buttons span {
+    position: relative;
+    max-height: 100%;
+    max-width: 5dvh;
+    background-color: rgb(126, 10, 221);
+    border-radius: 2dvh;
+margin: 0 1dvh !important;
+cursor: pointer;
+}
+.nav-account-content-body-buttons span i:nth-child(1) {
+    
+    padding: 2dvh !important;
+    border-radius: 50%;
+    font-size: 3dvh;
+    
+}
+.nav-account-content-body-buttons button:hover {
+    background-color: rgb(173, 2, 2);
+    border-radius: 1dvh;
+}
+.nav-account-content-body-buttons button:active {
+    transform: scale(0.9);
+    border-radius: 100dvh;
+    background-color: rgb(90, 2, 2);
+}
+.nav-account-content-body-buttons-menu {
+position: absolute;
+bottom: 100%;
+right: 100%;
+height: 10dvh;
+width: 100%;
+background-color: gold;
+}
