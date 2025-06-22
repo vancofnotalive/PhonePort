@@ -92,12 +92,12 @@ const pw = pageHeading.clientWidth;
   styles()
 
 
-function phoneSidebar(element , action) {
+function phoneSidebar(action) {
   let sidebar = document.querySelector(".sidebar");
 if (action) {
 if (window.innerWidth <= 768) {
   sidebar.style.display = "flex";
-  sidebar.querySelector(".sidebar-closearea").setAttribute("onclick" , "phoneSidebar(this , false)")
+  sidebar.querySelector(".sidebar-closearea").setAttribute("onclick" , "phoneSidebar(false)")
   let css = 
   `
   .sidebar {
@@ -153,3 +153,133 @@ function scriptStyle(destroyTime, css) {
     }, destroyTime)
 }
 
+function navigateToPage(element) {
+
+element.className = "sidebar-content-navigation navigation-selected"
+let pageToGet = element.getAttribute("data-page");
+let newHeading = element.querySelector("h1").innerText;
+let icon = element.querySelector("i").className;
+let pageHeading = document.querySelector(".page-heading");
+pageHeading.querySelector("h1").innerText = newHeading;
+pageHeading.querySelector("i").className = icon;
+let sidebar = element.closest(".sidebar")
+let allNavigation = sidebar.querySelectorAll(".sidebar-content-navigation");
+allNavigation.forEach(e => {
+  if (e != element) {
+    e.className = "sidebar-content-navigation"
+  }
+  e.removeAttribute("onclick")
+
+})
+setTimeout(() => {
+phoneSidebar()
+}, 450)
+setTimeout(() => {
+allNavigation.forEach(e => {
+  e.setAttribute("onclick" , "navigateToPage(this)")
+})
+
+}, 800)
+let pageContent = document.querySelector(".page-content");
+pageContent.querySelectorAll(".page-content-data").forEach(page => {
+  if (page.getAttribute("data-page-recive") == '_' + pageToGet) {
+    if (pageToGet == "Dashboard") {
+
+      page.style.display = "flex";
+      
+      // uncomment this when getting data in json(); for testing I have 
+      // directly written code to open pannel above
+      // $.ajax({
+      //   URL: "/OriginOwnerUi/GetDashboard",
+      //   type: "GET",
+      //   success: (data) => {
+          
+      //       // page.style.display = "flex";
+      //   },
+      //   error: () => {
+      //     alert("Failed to get Dashboard")
+      //   }
+      // })
+    }
+    else if (pageToGet == "Course") {
+page.style.display = "flex";
+    }
+    else if (pageToGet == "Institute") {
+page.style.display = "flex";
+    }
+    else {
+      page.style.display = "flex";  
+      // mangement
+    }
+// "variable" : dPage,
+// "fullForm" : "DisablePage",
+// "description": "To get other pages expect current page and stop showing"
+    pageContent.querySelectorAll(".page-content-data").forEach(dPage => {
+      if (dPage != page) {
+        dPage.style.display = "none"
+      }
+    })
+  }
+})
+}
+
+
+function pageLoader(action , text = "Loading data") {
+  let loader = document.querySelector(".page-loader");
+  if (action) {
+    loader.style.display = "flex";
+    loader.querySelector("h1").innerText = text;
+
+    return "Open"
+  }
+  
+let css = 
+`
+.page-loader {
+animation: page-loader_Close 400ms;
+}
+@keyframes page-loader_Close {
+0% {
+transform: translate(-50%, -50%) scale(1);
+background-color: white;
+opacity: 1;
+}
+100% {
+transform: translate(-50%, -50%) scale(0.8);
+opacity: 0;
+background-color: transparent;
+}
+}
+`
+scriptStyle(400 , css)
+  setTimeout(() => {
+  loader.style.display = "none";
+loader.querySelector("h1").innerText = "Loading data";
+}, 400)
+    return "Close"
+
+}
+
+function navAccountBody(action) {
+  let body = document.querySelector(".nav-account-content-body")
+  let blur = document.querySelector(".nav-account-content-body-close-body")
+let navAccount = body.closest(".nav-account");
+  if (action) {
+if (body && blur) {
+
+  blur.style.display = "flex"
+  body.style.display = "flex";
+  
+  
+}
+    
+    return "Open"
+  }
+  if (body && blur) {
+   blur.style.display = "none"
+    body.style.display = "none";
+    
+    return "Close"
+  }
+  
+}
